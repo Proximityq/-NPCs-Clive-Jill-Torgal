@@ -1,0 +1,58 @@
+{
+    "Format": "2.7.0", //if you have a 1.5 NPC, make sure this is updated once you have the NPC converted, or certain things like map patches will break
+    "Changes":
+	  [
+		{
+   		 "LogName": "Blank JSON load", //The logline is not required, but it's useful down the road for labeling your patches so you can tell your problem is, say "NPC Dialogue Patch" and not "NPC Patch #14"
+        	"Action": "Load",
+        	"Target": "Characters/Dialogue/{{ModId}}_Clive, Characters/schedules/{{ModId}}_Clive, Strings/schedules/{{ModId}}_Clive",
+        	"FromFile": "assets/data/blank.json", //this should be wherever you put it in your assets folder - put it in a subfolder if you want.
+		},
+	 
+	 
+    	{
+		// NPC Disposition - updated for 1.6	 
+        	"LogName": "Clive exists!",
+   		 "Action": "Include",
+   		 "FromFile": "assets/data/dispos.json"
+    	},
+		
+		{
+		// NPC Dialogue Portrait
+        	"LogName": "Base Portraits",
+        	"Action": "Load",
+        	"Target": "Portraits/{{ModId}}_Clive",
+        	"FromFile": "assets/images/clive.png",
+		},
+		
+		{
+        // NPC Sprite
+			"LogName": "Base Portraits",
+        	"Action": "Load",
+        	"Target": "Characters/{{ModId}}_Clive",
+        	"FromFile": "assets/images/clivesprites.png",
+		},
+		
+		{
+		// NPC Dialogue
+        	"LogName": "NPC Dialogue",
+   		 "Action": "Include",
+   		 "FromFile": "assets/data/dialogue.json"
+    	},
+		
+		{
+		// NPC Gift Tastes
+   		 "LogName": "Gift Tastes Include",
+   		 "Action": "Include",
+   		 "FromFile": "assets/data/gifttastes.json"
+		},
+		
+		{
+		// Clive House
+		 "LogName": "Load Clive's House Exterior Map", // LogName gives your CP patch (different concept to map patch - it's one action that Content Patcher takes, identified by being a block of JSON with the "Action" field) a descriptive name that shows up in errors/warnings and patch summaries
+		 "Action": "Load", // This action loads the map as a new asset into the game
+		 "Target": "Maps/{{ModID}}_CliveHouse", // {{ModID}} is a CP token that is automatically converted into your mod's unique ID. Using it to prefix all your asset names and IDs ensures that your mod's things are unique and won't clash with things from other mods
+		 "FromFile": "Assets/Maps/Forest.tmx" // The name of the map file you made, inside the Maps folder you moved it to
+		},
+      ]
+}
