@@ -37,6 +37,17 @@
 	"GreenRain_2": "Jill and I arrived at the valley while it was raining like this.#$b#It seems like the wizard can open more portals during the green rain.", 
 	"GreenRainFinished": "Torgal seems to like the grass that grows from the rain.#$b#Last night he came home covered in moss.$h", 
 	"AcceptGift_(O)StardropTea": "This aroma… Joshua—#$b#%Clive’s eyes starts to water.#$b#Thank you. For this.#$e#I need a bit of time to myself right now.", 
+	
+	"AcceptGift_(O)595": "Jill and I came from the Duchy of Rosaria. Not much of it remains now, but this flower still gives us hope.$h",
+	"AcceptGift_(O)613": "The hideaway grows the best apples, everyone loves them. This one’s pretty good too, not as sweet though.$h",
+	"AcceptGift_(O)863": "%A sad look glazes over his eyes. He gives you a nod of thanks however.",
+	"AcceptGift_(O)211": "I’ve never really been one for cakes and ale.$s",
+	"AcceptGift_(O)220": "I’ve never really been one for cakes and ale.$s",
+	"AcceptGift_(O)221": "I’ve never really been one for cakes and ale.$s",
+	"AcceptGift_(O)732": "I’ve never really been one for cakes and ale.$s",
+	"AcceptGift_(O)313": "I’ve never really been one for cakes and ale.$s",
+	"AcceptGift_category_minerals": "Sorry, I just can’t shake off this bad feeling when I see this.$s",
+	"AcceptGift_category_gem": "Sorry, I just can’t shake off this bad feeling when I see this.$s",
 
 // GENERIC DIALOGUE (Numbers indicate heart level)
     "Mon": "", 
