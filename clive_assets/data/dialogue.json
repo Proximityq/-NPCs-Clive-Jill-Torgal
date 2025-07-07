@@ -10,78 +10,21 @@
 
 //CONVERSATION TOPICS (CTs) - CTs are not required but they are a great way to add more life to your NPC's dialogue. See the Conversation Topics page for an explanation if you are unfamiliar with them (https://stardewmodding.wiki.gg/wiki/Conversation_Topics)
 	//Vanilla - this is just a small selection, see the list of vanilla CTs for more (https://stardewvalleywiki.com/Modding:Dialogue#Conversation_topics)
-    "Introduction": "",
-	"cc_Begin": "",
+    "Introduction": "…#$b#Did the wizard…?#$e#The name’s Clive. Nice meeting you.",
+	"cc_Begin": "I’ve been seeing more Junimos around lately. This isn’t your doing, is it?",
 	"cc_Boulder": "",
 	"cc_Bridge": "",
-	"cc_Bus": "",
+	"cc_Bus": "You’re getting pretty far with the Community Center bundles.#$b#I’ve got some more stuff that might be useful. Here, take them.#$action AddItem (O)259#$action AddItem (O)428#$action AddItem (O)276 5 2#$e#I’ve been doing pretty well, you see.",
 	"cc_Greenhouse": "",
-	"cc_Minecart": "",
-	"cc_Complete": "",
+	"cc_Minecart": "I see you’re helping with the Community Center too.#$e#Truth is, the Junimos also asked us for some help. I helped collect some monster parts, but it seems they won’t be needing it anymore.#$e#Don’t look sorry, that’s just how it is sometimes.#$b#Why don’t you take this? Give it to the Junimos for me.$action AddItem (O)613",
+	"cc_Complete": "The town seems pretty happy now that you’ve fixed up their Community Center.#$b#You should be proud, you deserve it.",
 	"movieTheater": "",
 	"willyCrabs": "",
 	"pamHouseUpgrade": "",
 	"pamHouseUpgradeAnonymous": "",
 
 	//CTs from other mods - this is a great way to add interactivity between your NPC and other mods! See the mod-added CTs page for a list of many (but not all) other mods' CTs (https://stardewmodding.wiki.gg/wiki/Conversation_Topics:_List_of_CTs)
-
-	// Mod: More Conversation Topics
-	"railroadEarthquake": "",
-	"islandResortUnlocked": "",
-	"jojaMartStruckByLightning": "",
-	"babyBoy": "",
-	"babyGirl": "",
-	"wedding": "",
-	"luauBest": "",
-	"luauShorts": "",
-	"luauPoisoned": "",
-
-	//Mod: Always Raining in the Valley
-	"SterlingTrash": "",
-	"SterlingTrain": "",
-	"SterlingDrugs": "",
-	"SterlingRelapse": "",
-	"SterlingApology": "",
-
-	//Mod: Alecto the Witch
-	"AlectoIntroduction": "",
-	"AlectoWizardTower": "",
-
-	//Mod: Juna
-	"JunaBeachBallet": "",
-	"JunaJunimos": "",
-	"JunaGone": "",
-
-	//Mod: Lavril
-	"LavrilUnlocked": "",
-
-	//Mod: Lucikiel
-	"LucikielArrives": "",
-	"ReputationIncreased": "",
-
-	//Mod: Ridgeside Village
-	"RSV_GH1": "", //opening of the RSV community greenhouse
-	"keahi_prank": "",
-	"Lidens_Return": "",
-	"Naomi_Return": "",
-	"event_postweddingreception": "",
-
-	//Mod: Leilani
-	"LeilaniArrives": "",
-
-	//Mod: Abigail and Juliet Prank the Jojamart
-	"PTJ03": "",
-
-	//Mod: Qi's Pumpkin Spice
-	"pumpkin_spice_madness": "",
-
-	//Mod: Jorts and Jean the Helper Cats
-	"MeetTheCats": "",
-	"ButteredJorts": "",
-	"DumpsterFishing": "",
-	"RubberCatting": "",
-	"JortsZoomies": "",
-	"OpenAllTheDoors": "",
+	//Deleted because too much work.
 
 // SPECIFIC DIALOGUE
 	"MovieInvite_Invited": "",
@@ -90,10 +33,10 @@
 	"FlowerDance_Accept_Spouse": "",
     "FlowerDance_Accept": "",
 	"FlowerDance_Decline": "",
-	"GreenRain": "", //new event in 1.6
-	"GreenRain_2": "", //new event in 1.6 - year 2 occurrence
-	"GreenRainFinished": "", //new event in 1.6 - used the day after the event
-	"AcceptGift_(O)StardropTea": "", //new gift reaction - if you don't add this your NPC will spit out a bunch of numbers instead of any dialogue when given this
+	"GreenRain": "The mist looks like an aetherflood, but I don’t feel any magic here. Is there an Eikon of Nature in this world?",
+	"GreenRain_2": "Jill and I arrived at the valley while it was raining like this.#$b#It seems like the wizard can open more portals during the green rain.", 
+	"GreenRainFinished": "Torgal seems to like the grass that grows from the rain.#$b#Last night he came home covered in moss.$h", 
+	"AcceptGift_(O)StardropTea": "This aroma… Joshua—#$b#%Clive’s eyes starts to water.#$b#Thank you. For this.#$e#I need a bit of time to myself right now.", 
 
 // GENERIC DIALOGUE (Numbers indicate heart level)
     "Mon": "", 
