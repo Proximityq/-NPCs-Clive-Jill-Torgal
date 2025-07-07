@@ -2,13 +2,12 @@
 	"Changes": 
     [
 		{
-            "LogName": "Wren Gift Taste Data",
+            "LogName": "Clive Gift Taste Data",
             "Action": "EditData",
             "Target": "Data/NPCGiftTastes",
             "Entries":
             {
-                "{{ModId}}_WrenSong": "You're awesome, @! Is this where I tell you you're a goat or you slap?/444 112 122 167 403 404 440/Thanks, @! I'll put this to good use./248 279 286 287 288 334 335 336 337 338 396 399 787 917 372 428 -12/I appreciate the thought, but uh, this isn't really my thing./196 219 225 202 209 tiakall.bass.seabass/@, I feel like you really had to work to find something I'd dislike this much. This isn't appropriate to give to anyone, you know./747/Thanks for thinking of me, @./446 746 766 -7 -8 -9 -10 -15 -16 item_alcohol/",
-				
+		"{{ModId}}_Clive": "Heh, thanks for this. You’re really something, you know./198 595 613 863/Thanks, I could always use more of this./194 203 216 265 444 814 -5 -6 -79 257 281 404 422 851/Never really had a taste for these things./211 220 221 303 732/You’re not that good of a gift giver, are you./-2 -12/I’m sure I can find a use for this./74 112 122 787/",
 			}
 		},
 ]
