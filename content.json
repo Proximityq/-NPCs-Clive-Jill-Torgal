@@ -39,7 +39,8 @@
    		 "FromFile": "assets/data/clive/dialogue.json"
     	},
 		
-		{ // Clive Schedule
+		{ 
+		// Clive Schedule
          "LogName": "NPC Schedule",
    		 "Action": "Include",
    		 "FromFile": "assets/data/clive/schedule.json"
@@ -54,10 +55,10 @@
 		
 		{
 		// Clive House
-		 "LogName": "Load Clive's House Exterior Map", // LogName gives your CP patch (different concept to map patch - it's one action that Content Patcher takes, identified by being a block of JSON with the "Action" field) a descriptive name that shows up in errors/warnings and patch summaries
+		 "LogName": "Load Clive Jill and Torgal's House Exterior Map", // LogName gives your CP patch (different concept to map patch - it's one action that Content Patcher takes, identified by being a block of JSON with the "Action" field) a descriptive name that shows up in errors/warnings and patch summaries
 		 "Action": "Load", // This action loads the map as a new asset into the game
-		 "Target": "Maps/{{ModID}}_CliveHouse", // {{ModID}} is a CP token that is automatically converted into your mod's unique ID. Using it to prefix all your asset names and IDs ensures that your mod's things are unique and won't clash with things from other mods
-		 "FromFile": "assets/maps/clive/Forest.tmx" // The name of the map file you made, inside the Maps folder you moved it to
+		 "Target": "Maps/{{ModID}}_CliveJillTorgalHouse", // {{ModID}} is a CP token that is automatically converted into your mod's unique ID. Using it to prefix all your asset names and IDs ensures that your mod's things are unique and won't clash with things from other mods
+		 "FromFile": "assets/maps/clive/CliveJillTorgalExterior.tmx" // The name of the map file you made, inside the Maps folder you moved it to
 		},
       ]
 }
