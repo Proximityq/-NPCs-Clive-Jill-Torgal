@@ -16,7 +16,7 @@
 	"cc_Bridge": "",
 	"cc_Bus": "You’re getting pretty far with the Community Center bundles.#$b#I’ve got some more stuff that might be useful. Here, take them.#$action AddItem (O)259#$action AddItem (O)428#$action AddItem (O)276 5 2#$e#I’ve been doing pretty well, you see.",
 	"cc_Greenhouse": "",
-	"cc_Minecart": "I see you’re helping with the Community Center too.#$e#Truth is, the Junimos also asked us for some help. I helped collect some monster parts, but it seems they won’t be needing it anymore.#$e#Don’t look sorry, that’s just how it is sometimes.#$b#Why don’t you take this? Give it to the Junimos for me.$action AddItem (O)613",
+	"cc_Minecart": "I see you’re helping with the Community Center too.#$e#Truth is, the Junimos also asked us for some help. I helped collect some monster parts, but it seems they won’t be needing it anymore.#$e#Don’t look sorry, that’s just how it is sometimes.#$b#Why don’t you take this? Give it to the Junimos for me.[(O)613]",
 	"cc_Complete": "The town seems pretty happy now that you’ve fixed up their Community Center.#$b#You should be proud, you deserve it.",
 	"movieTheater": "",
 	"willyCrabs": "",
@@ -50,13 +50,22 @@
 	"AcceptGift_category_gem": "Sorry, I just can’t shake off this bad feeling when I see this.$s",
 
 // GENERIC DIALOGUE (Numbers indicate heart level)
-    "Mon": "", 
-    "Tue": "",
-    "Wed": "",
-    "Thu": "",
+    "Mon": "Take care in the forest. There aren’t many monsters, but sometimes a couple show up on our walks with Torgal.", 
+    "Tue": "The people here have technology almost like magic. It gives a lot of hope that our people back home can also thrive in a world without magic.#$b#Maybe I should bring something back for Mid…#$e#$%Clive seems lost in thought.",
+    "Wed": "Today is my turn to pick up the groceries, but I don’t really know what to get…#$b#Perhaps I should ask Torgal?",
+    "Thu": "I never got to try the Fried Mortress of Skyworm that Molly made.#$b#What was it again? Wyvern liver and drakesmint? I don’t think we can find that here.",
     "Fri": "",
     "Sat": "",
-    "Sun": "",
+    "Sun": "Sometimes I can’t help but feel like an outsider here.
+		#$q {{ModId}}_outsiderquestion_yes/{{ModId}}_outsiderquestion_no {{ModId}}_outsiderquestion_followup#What about you?
+			#$r {{ModId}}_outsiderquestion_yes 100 outsiderquestion_yes#Sometimes I feel like an outsider too.
+			#$r {{ModId}}_outsiderquestion_yes 250 outsiderquestion_both friend_{{ModId}}_Jill_250#I think we’re both finding our places in the village.
+			#$r {{ModId}}_outsiderquestion_no -20 outsiderquestion_no#I think I belong here.
+		",
+			"outsiderquestion_yes": "I’m glad I’m not the only one.#$b#See you later, @.$h",
+			"outsiderquestion_both": "That’s right, we’re all finding our place here.$h#$b#I’m sure you belong here, @.$0",
+			"outsiderquestion_no": "Is that so? I’m happy for you.", 
+			"outsiderquestion_followup": "$p {{ModId}}_outsiderquestion_yes#But I’m sure we’ll fit in soon enough.$h|But you’re fitting into the village quite nicely, aren’t you?",
 
     "Mon2": "", 
     "Tue2": "",
@@ -66,13 +75,15 @@
     "Sat2": "",
     "Sun2": "",
 
-    "Mon4": "", 
+    "Mon4": "@, nice seeing you. Come to pet Torgal again?", 
     "Tue4": "",
-    "Wed4": "",
-    "Thu4": "",
+    "Wed4": "Hey @. What do you think I should make for Jill tonight?#$e#What do I like? Hmm…#$b#Maybe a Baked Fish or something?$h",
+    "Thu4": "Have you heard of foie gras? I think it’s close enough to wyvern liver.#$e#If you have any ducks for sale, we’ll be happy to take one.#$b#Or an egg, I’m sure we can make do with an egg.",
     "Fri4": "",
     "Sat4": "",
-    "Sun4": "",
+    "Sun4": "Where should we go…
+		#$p {{ModId}}_outsiderquestion_no#Oh, @, good to see you.|Oh, @, good to see you! What is it that Robin says…#$b#You're a regular member of the community now, don't you think?$h#$b#Heheh.
+		",
 
     "Mon6": "",
     "Tue6": "",
