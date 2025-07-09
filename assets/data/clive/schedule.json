@@ -1,0 +1,20 @@
+{
+"Changes":
+	[
+ 
+   	 {
+        	"LogName": "Clives Schedule",
+        	"Action": "EditData",
+        	"Target": "Characters/schedules/{{ModId}}_Clive",
+			"Entries": 
+			{
+   			 "rain": "",
+   			 "spring": "0600 Town 28 67 2", // Sticking Clive in the middle of town for now
+			 "summer": "",
+			 "fall": "",
+			 "winter": "",
+   			 
+			},
+    	},
+],
+}

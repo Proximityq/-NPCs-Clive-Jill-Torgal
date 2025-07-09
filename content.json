@@ -39,6 +39,12 @@
    		 "FromFile": "assets/data/clive/dialogue.json"
     	},
 		
+		{ // Clive Schedule
+         "LogName": "NPC Schedule",
+   		 "Action": "Include",
+   		 "FromFile": "assets/data/clive/schedule.json"
+    	},
+		
 		{
 		// Clive Gift Tastes
    		 "LogName": "Gift Tastes Include",
