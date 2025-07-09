@@ -3,8 +3,8 @@
   "Author": "Proximity & Applejr2357",
   "Version": "1.0.0",
   "Description": "Adds custom NPCs Clive, Jill, and Torgal from FF16.",
-  "UniqueID": "proximity.clive",
-  "UpdateKeys": [""],
+  "UniqueID": "proximity.clivejilltorgal",
+  "UpdateKeys": ["35478"],
   "ContentPackFor": {
     "UniqueID": "Pathoschild.ContentPatcher"
   },
