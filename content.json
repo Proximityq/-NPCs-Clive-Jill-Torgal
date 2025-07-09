@@ -53,12 +53,71 @@
    		 "FromFile": "assets/data/clive/gifttastes.json"
 		},
 		
-		{
-		// Clive House
-		 "LogName": "Load Clive Jill and Torgal's House Exterior Map", // LogName gives your CP patch (different concept to map patch - it's one action that Content Patcher takes, identified by being a block of JSON with the "Action" field) a descriptive name that shows up in errors/warnings and patch summaries
-		 "Action": "Load", // This action loads the map as a new asset into the game
-		 "Target": "Maps/{{ModID}}_CliveJillTorgalHouse", // {{ModID}} is a CP token that is automatically converted into your mod's unique ID. Using it to prefix all your asset names and IDs ensures that your mod's things are unique and won't clash with things from other mods
-		 "FromFile": "assets/maps/clive/CliveJillTorgalExterior.tmx" // The name of the map file you made, inside the Maps folder you moved it to
+		
+		// Clive Jill and Torgal's House
+		{ // Creating the New Map (house interior)
+			"LogName": "Load Clive Jill and Torgal's House Interior Map", // LogName gives your CP patch (different concept to map patch - it's one action that Content Patcher takes, identified by being a block of JSON with the "Action" field) a descriptive name that shows up in errors/warnings and patch summaries
+			"Action": "Load", // This action loads the map as a new asset into the game
+			"Target": "Maps/{{ModID}}_CliveJillTorgalHouseInterior", // {{ModID}} is a CP token that is automatically converted into your mod's unique ID. Using it to prefix all your asset names and IDs ensures that your mod's things are unique and won't clash with things from other mods
+			"FromFile": "assets/maps/CliveJillTorgalHouseInterior.tmx" // The name of the map file you made, inside the Maps folder you moved it to
+		},
+		{ // Creating the Location (house interior)
+			"LogName": "Add custom locations",
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Entries": {
+				"{{ModID}}_CliveJillTorgalHouseInterior": { // This can be the same or different to the name of the map, but do make sure it is prefixed with your mod ID to be unique
+					"DisplayName": "{{i18n: location.CliveJillTorgalHouseInterior.name}}", // DisplayName is rarely seen but because it can be seen by players sometimes I recommend adding it via i18n so it can be easily translated
+					"DefaultArrivalTile": { // Make this the tile that you want the farmer to arrive on when using the door so when anyone warps in from a different action (like using debug warp) they will still arrive at the door instead of in the void
+						"X": 0,
+						"Y": 0
+					},
+					"CreateOnLoad": {
+						"MapPath": "maps/clive/{{ModID}}_CliveJillTorgalHouseInterior" // Notice that this is the Target from the map Load patch we wrote in the section before this one. This field tells the game which map to use for this location.
+					}
+				}
+			}
+		},
+		{ // Patching the New Map In (house exterior)
+			"LogName": "Add Clive Jill and Torgal's House Exterior to Forest map",
+			"Action": "EditMap",
+			"Target": "maps/{{ModID}}_CliveJillTorgalHouseExterior", // Target the map you're adding your house to.
+			"PatchMode": "Replace", // Use this PatchMode to Replace the existing area we're about to target. This replaces every tile on the target map with tiles from your source map.
+			"FromFile": "assets/maps/CliveJillTorgalHouseExterior.tmx", // The name of the patch we just made. This is the source map.
+			"FromArea": { // The X and Y of the FromArea will remain 0,0. Open up your map patch and check the width and height of the map.
+				"X": 0,
+				"Y": 0,
+				"Width": 12,
+				"Height": 12
+			},
+			"ToArea": { // The X and Y of the ToArea(the ones on the target map). This is where your patch 'starts' on the target map.
+				"X": 7,
+				"Y": 61,
+				"Width": 12,
+				"Height": 12
+			}
+		},
+		{// Adds the LockedDoorWarp. This tile is locked behind a specific time in-game + the player clicking on said tile. It can also be locked behind heart level with an NPC.
+			"LogName": "Edit Forest map to add warp into Clive Jill and Torgal's house",
+			"Action": "EditMap",
+			"Target": "Maps/Forest", // Target the map you're adding your house to.
+			"MapTiles": [
+				{
+					"Position": { "X": 9, "Y": 69 }, // The coordinate of the bottom tile of the door. This is the first set of coordinates that we wrote down earlier in the tutorial.
+					"Layer": "Buildings", // The tile the player is clicking is on the buildings layer.
+					"SetProperties": {
+						"Action": "LockedDoorWarp 8 21 {{ModID}}_CliveJillTorgalHouseInterior 0900 2200" // LockedDoorWarp that takes you to these coordinates INSIDE the house, then the name of the house, and then the opening and closing time. If you also want the player to be locked out until they reach a certain heart level with an NPC you can add their internal name and the number of friendship points needed to use the warp (in this case AirynDao 1000).
+					}
+				}
+			]
+		},
+		{// Adds warps to leave the house
+			"LogName": "Edit Clive Jill and Torgal's house interior to add warp out of the house",
+			"Action": "EditMap",
+			"Target": "Maps/{{ModID}}_CliveJillTorgalHouseExterior", // Target the interior house map this time
+			"AddWarps": [
+				"8 23 Forest 9 71", // The first set of coordinates is where you want the player to step to LEAVE the house, the second set is where they will show up OUTSIDE the house, in the village.
+			]
 		},
       ]
 }
