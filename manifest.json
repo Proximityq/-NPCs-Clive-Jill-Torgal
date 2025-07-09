@@ -1,8 +1,8 @@
 {
-  "Name": "Clive - Custom NPC",
+  "Name": "Clive-Jill-Torgal - Custom NPC",
   "Author": "Proximity & Applejr2357",
   "Version": "1.0.0",
-  "Description": "Adds custom NPC Clive from FF16.",
+  "Description": "Adds custom NPCs Clive, Jill, and Torgal from FF16.",
   "UniqueID": "proximity.clive",
   "UpdateKeys": [""],
   "ContentPackFor": {
