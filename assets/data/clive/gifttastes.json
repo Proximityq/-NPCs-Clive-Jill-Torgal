@@ -7,7 +7,7 @@
             "Target": "Data/NPCGiftTastes",
             "Entries":
             {
-		"{{ModId}}_Clive": "Heh, thanks for this. You’re really something, you know./198 595 613 863/Thanks, I could always use more of this./194 203 216 265 444 814 -5 -6 -79 257 281 404 422 851/Never really had a taste for these things./211 220 221 303 732/You’re not that good of a gift giver, are you./-2 -12/I’m sure I can find a use for this./74 112 122 787/",
+		"{{ModId}}_Clive": "Heh, thanks for this. You’re really something, you know./198 595 613 863/Thanks, I could always use more of this./194 203 216 265 444 814 -5 -6 -79/Never really had a taste for these things./211 220 221 303 732/You’re not that good of a gift giver, are you./-2 -12/I’m sure I can find a use for this./74 112 122 787 -4 142 edible_mushroom/",
 			}
 		},
 ]
