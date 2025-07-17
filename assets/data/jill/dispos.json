@@ -5,14 +5,14 @@
    		 "Action": "EditData",
    		 "Target": "Data/Characters",
    		 "Entries": {
-   			 "{{ModId}}_Clive": {
-   				 "DisplayName": "Clive",
-   				 "Gender": "Male", //self-explanatory: can be male, female, or undefined (for nonbinary)
+   			 "{{ModId}}_Jill": {
+   				 "DisplayName": "Jill",
+   				 "Gender": "Female", //self-explanatory: can be male, female, or undefined (for nonbinary)
    				 "Age": "Adult", //can be child, teen or adult; affects certain default strings
-   				 "Manner": "Neutral", //can be polite, neutral, or rude; affects certain default strings
+   				 "Manner": "Polite", //can be polite, neutral, or rude; affects certain default strings
    				 "SocialAnxiety": "Neutral", //can be outgoing, neutral, or shy; affects certain default strings
    				 "Optimism": "Positive", //can be positive, neutral, or negative; affects certain default strings
-   				 "BirthSeason": "summer", //self-explanatory
+   				 "BirthSeason": "spring", //self-explanatory
    				 "BirthDay": "5", //self-explanatory
    				 "HomeRegion": "Town", //can be Town, Desert, or Other - I suggest Town so they're included in certain activities like the Luau friendship boost and Winter Star, unless you're doing a hidden or non-human NPC, in which case you might want Other. 
    				 "CanBeRomanced": false, //Whether or not the NPC is dateable/marryable. 
@@ -27,8 +27,8 @@
    						 "Id": "Default",
    						 "Location": "{{ModID}}_CliveJillTorgalHouseInterior",
    						 "Tile": {
-   							 "X": 12,
-   							 "Y": 20
+   							 "X": 11,
+   							 "Y": 19
    						 },
    						 "Direction": "right"
    					 }

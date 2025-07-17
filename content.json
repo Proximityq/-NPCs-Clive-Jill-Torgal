@@ -1,60 +1,127 @@
 {
-    "Format": "2.7.0", //if you have a 1.5 NPC, make sure this is updated once you have the NPC converted, or certain things like map patches will break
+    "Format": "2.7.0", // Version of CP
     "Changes":
 	  [
-		{
-   		 "LogName": "Blank JSON load", //The logline is not required, but it's useful down the road for labeling your patches so you can tell your problem is, say "NPC Dialogue Patch" and not "NPC Patch #14"
+		{ // Blank JSON Load for Clive, Jill, and Torgal's Dialogue and Schedules
+   		 "LogName": "Blank JSON load", 
          "Action": "Load",
-         "Target": "Characters/Dialogue/{{ModId}}_Clive, Characters/schedules/{{ModId}}_Clive, Strings/schedules/{{ModId}}_Clive",
-         "FromFile": "assets/data/blank.json", //this should be wherever you put it in your assets folder - put it in a subfolder if you want.
+         "Target": "Characters/Dialogue/{{ModId}}_Clive, Characters/Dialogue/{{ModId}}_Jill, Characters/Dialogue/{{ModId}}_Torgal, Characters/schedules/{{ModId}}_Clive, Characters/schedules/{{ModId}}_Jill, Characters/schedules/{{ModId}}_Torgal",
+         "FromFile": "assets/data/blank.json", 
 		},
 	 
+		// Load Character Dispositions
     	{
-		// Clive Disposition - updated for 1.6	 
          "LogName": "Clive exists!",
    		 "Action": "Include",
    		 "FromFile": "assets/data/clive/dispos.json"
     	},
-		
+		{	 
+         "LogName": "Jill exists!",
+   		 "Action": "Include",
+   		 "FromFile": "assets/data/jill/dispos.json"
+    	},
 		{
-		// Clive Dialogue Portrait
-         "LogName": "Base Portraits",
+         "LogName": "Torgal exists!",
+   		 "Action": "Include",
+   		 "FromFile": "assets/data/torgal/dispos.json"
+    	},
+		
+		// Load Character Portraits
+		{
+         "LogName": "Clive Portraits",
          "Action": "Load",
          "Target": "Portraits/{{ModId}}_Clive",
          "FromFile": "assets/images/clive/clive.png",
 		},
-		
 		{
-        // Clive Sprite
-		 "LogName": "Base Portraits",
+         "LogName": "Jill Portraits",
+         "Action": "Load",
+         "Target": "Portraits/{{ModId}}_Jill",
+         "FromFile": "assets/images/jill/jill.png",
+		},
+		{
+         "LogName": "Torgal Portraits",
+         "Action": "Load",
+         "Target": "Portraits/{{ModId}}_Torgal",
+         "FromFile": "assets/images/torgal/torgal.png",
+		},
+		
+		// Load Character Sprites
+		{
+		 "LogName": "Clive Sprites",
          "Action": "Load",
          "Target": "Characters/{{ModId}}_Clive",
          "FromFile": "assets/images/clive/clivesprites.png",
 		},
-		
 		{
-		// Clive Dialogue
-         "LogName": "NPC Dialogue",
+		 "LogName": "Jill Sprites",
+         "Action": "Load",
+         "Target": "Characters/{{ModId}}_Jill",
+         "FromFile": "assets/images/jill/jillsprites.png",
+		},
+		{
+		 "LogName": "Torgal Sprites",
+         "Action": "Load",
+         "Target": "Characters/{{ModId}}_Torgal",
+         "FromFile": "assets/images/torgal/torgalsprites.png",
+		},
+		
+		// Load Character Dialogue
+		{
+		
+         "LogName": "Clive's Dialogue",
    		 "Action": "Include",
    		 "FromFile": "assets/data/clive/dialogue.json"
     	},
+		{
 		
-		{ 
-		// Clive Schedule
-         "LogName": "NPC Schedule",
+         "LogName": "Jill's Dialogue",
+   		 "Action": "Include",
+   		 "FromFile": "assets/data/jill/dialogue.json"
+    	},
+		{
+		
+         "LogName": "Torgal's Dialogue",
+   		 "Action": "Include",
+   		 "FromFile": "assets/data/torgal/dialogue.json"
+    	},
+		
+		// Load Character Schedules
+		{
+         "LogName": "Clive Schedule",
    		 "Action": "Include",
    		 "FromFile": "assets/data/clive/schedule.json"
     	},
-		
 		{
-		// Clive Gift Tastes
-   		 "LogName": "Gift Tastes Include",
+         "LogName": "Jill Schedule",
+   		 "Action": "Include",
+   		 "FromFile": "assets/data/jill/schedule.json"
+    	},
+		{
+         "LogName": "Torgal Schedule",
+   		 "Action": "Include",
+   		 "FromFile": "assets/data/torgal/schedule.json"
+    	},
+		
+		// Load Character Gift Tastes
+		{
+   		 "LogName": "Clive Gift Tastes Include",
    		 "Action": "Include",
    		 "FromFile": "assets/data/clive/gifttastes.json"
 		},
+		{
+   		 "LogName": "Jill Gift Tastes Include",
+   		 "Action": "Include",
+   		 "FromFile": "assets/data/jill/gifttastes.json"
+		},
+		{
+   		 "LogName": "Torgal Gift Tastes Include",
+   		 "Action": "Include",
+   		 "FromFile": "assets/data/torgal/gifttastes.json"
+		},
 		
 		
-		// Clive Jill and Torgal's House
+		// Load Clive Jill and Torgal's House
 		{ // Creating the New Map (house interior)
 			"LogName": "Load Clive Jill and Torgal's House Interior Map", // LogName gives your CP patch (different concept to map patch - it's one action that Content Patcher takes, identified by being a block of JSON with the "Action" field) a descriptive name that shows up in errors/warnings and patch summaries
 			"Action": "Load", // This action loads the map as a new asset into the game
@@ -62,7 +129,7 @@
 			"FromFile": "assets/maps/CliveJillTorgalHouseInterior.tmx" // The name of the map file you made, inside the Maps folder you moved it to
 		},
 		{ // Creating the Location (house interior)
-			"LogName": "Add custom locations",
+			"LogName": "Add custom location House Interior",
 			"Action": "EditData",
 			"Target": "Data/Locations",
 			"Entries": {
@@ -79,7 +146,7 @@
 			}
 		},
 		{ // Patching the New Map In (house exterior)
-			"LogName": "Add Clive Jill and Torgal's House Exterior to Forest map",
+			"LogName": "Patch Clive Jill and Torgal's House Exterior to Forest map",
 			"Action": "EditMap",
 			"Target": "maps/{{ModID}}_CliveJillTorgalHouseExterior", // Target the map you're adding your house to.
 			"PatchMode": "Replace", // Use this PatchMode to Replace the existing area we're about to target. This replaces every tile on the target map with tiles from your source map.

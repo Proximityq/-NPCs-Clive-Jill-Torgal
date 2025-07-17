@@ -3,7 +3,7 @@
     [
  
 		{
-            "LogName": "",
+            "LogName": "Clive Dialogue",
             "Action": "EditData",
             "Target": "Characters/Dialogue/~NPCNAME~",
 			"Entries": {

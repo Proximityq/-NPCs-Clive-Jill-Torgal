@@ -1,0 +1,14 @@
+{
+	"Changes": 
+    [
+		{
+            "LogName": "Torgal Gift Taste Data",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries":
+            {
+		"{{ModId}}_Torgal": "",
+			}
+		},
+]
+}

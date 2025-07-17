@@ -1,0 +1,20 @@
+{
+"Changes":
+	[
+ 
+   	 {
+        	"LogName": "Jill's Schedule",
+        	"Action": "EditData",
+        	"Target": "Characters/schedules/{{ModId}}_Jill",
+			"Entries": 
+			{
+   			 "rain": "",
+   			 "spring": "", 
+			 "summer": "",
+			 "fall": "",
+			 "winter": "",
+   			 
+			},
+    	},
+],
+}

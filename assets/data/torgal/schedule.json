@@ -1,0 +1,20 @@
+{
+"Changes":
+	[
+ 
+   	 {
+        	"LogName": "Torgal's Schedule",
+        	"Action": "EditData",
+        	"Target": "Characters/schedules/{{ModId}}_Torgal",
+			"Entries": 
+			{
+   			 "rain": "",
+   			 "spring": "", 
+			 "summer": "",
+			 "fall": "",
+			 "winter": "",
+   			 
+			},
+    	},
+],
+}

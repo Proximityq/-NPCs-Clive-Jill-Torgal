@@ -1,0 +1,14 @@
+{
+	"Changes": 
+    [
+		{
+            "LogName": "Jill Gift Taste Data",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries":
+            {
+		"{{ModId}}_Jill": "",
+			}
+		},
+]
+}
