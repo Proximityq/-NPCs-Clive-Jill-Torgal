@@ -69,8 +69,8 @@
 				"{{ModID}}_CliveJillTorgalHouseInterior": { // This can be the same or different to the name of the map, but do make sure it is prefixed with your mod ID to be unique
 					"DisplayName": "{{i18n: location.CliveJillTorgalHouseInterior.name}}", // DisplayName is rarely seen but because it can be seen by players sometimes I recommend adding it via i18n so it can be easily translated
 					"DefaultArrivalTile": { // Make this the tile that you want the farmer to arrive on when using the door so when anyone warps in from a different action (like using debug warp) they will still arrive at the door instead of in the void
-						"X": 0,
-						"Y": 0
+						"X": 8,
+						"Y": 21
 					},
 					"CreateOnLoad": {
 						"MapPath": "maps/clive/{{ModID}}_CliveJillTorgalHouseInterior" // Notice that this is the Target from the map Load patch we wrote in the section before this one. This field tells the game which map to use for this location.
@@ -103,7 +103,7 @@
 			"Target": "Maps/Forest", // Target the map you're adding your house to.
 			"MapTiles": [
 				{
-					"Position": { "X": 9, "Y": 69 }, // The coordinate of the bottom tile of the door. This is the first set of coordinates that we wrote down earlier in the tutorial.
+					"Position": { "X": 10, "Y": 69 }, // The coordinate of the bottom tile of the door.
 					"Layer": "Buildings", // The tile the player is clicking is on the buildings layer.
 					"SetProperties": {
 						"Action": "LockedDoorWarp 8 21 {{ModID}}_CliveJillTorgalHouseInterior 0900 2200" // LockedDoorWarp that takes you to these coordinates INSIDE the house, then the name of the house, and then the opening and closing time. If you also want the player to be locked out until they reach a certain heart level with an NPC you can add their internal name and the number of friendship points needed to use the warp (in this case AirynDao 1000).
