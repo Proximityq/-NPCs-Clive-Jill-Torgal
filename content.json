@@ -148,7 +148,7 @@
 		{ // Patching the New Map In (house exterior)
 			"LogName": "Patch Clive Jill and Torgal's House Exterior to Forest map",
 			"Action": "EditMap",
-			"Target": "maps/{{ModID}}_CliveJillTorgalHouseExterior", // Target the map you're adding your house to.
+			"Target": "Maps/Forest", // Target the map you're adding your house to.
 			"PatchMode": "Replace", // Use this PatchMode to Replace the existing area we're about to target. This replaces every tile on the target map with tiles from your source map.
 			"FromFile": "assets/maps/CliveJillTorgalHouseExterior.tmx", // The name of the patch we just made. This is the source map.
 			"FromArea": { // The X and Y of the FromArea will remain 0,0. Open up your map patch and check the width and height of the map.
