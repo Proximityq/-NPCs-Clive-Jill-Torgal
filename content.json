@@ -1,5 +1,5 @@
 {
-    "Format": "2.7.0", // Version of CP
+    "Format": "2.7.4", // Version of CP
     "Changes":
 	  [
 		{ // Blank JSON Load for Clive, Jill, and Torgal's Dialogue and Schedules
@@ -123,9 +123,9 @@
 		
 		// Load Clive Jill and Torgal's House
 		{ // Creating the New Map (house interior)
-			"LogName": "Load Clive Jill and Torgal's House Interior Map", // LogName gives your CP patch (different concept to map patch - it's one action that Content Patcher takes, identified by being a block of JSON with the "Action" field) a descriptive name that shows up in errors/warnings and patch summaries
+			"LogName": "Load Clive Jill and Torgal's House Interior Map", 
 			"Action": "Load", // This action loads the map as a new asset into the game
-			"Target": "Maps/{{ModID}}_CliveJillTorgalHouseInterior", // {{ModID}} is a CP token that is automatically converted into your mod's unique ID. Using it to prefix all your asset names and IDs ensures that your mod's things are unique and won't clash with things from other mods
+			"Target": "Maps/{{ModID}}_CliveJillTorgalHouseInterior",
 			"FromFile": "assets/maps/CliveJillTorgalHouseInterior.tmx" // The name of the map file you made, inside the Maps folder you moved it to
 		},
 		{ // Creating the Location (house interior)
@@ -133,14 +133,14 @@
 			"Action": "EditData",
 			"Target": "Data/Locations",
 			"Entries": {
-				"{{ModID}}_CliveJillTorgalHouseInterior": { // This can be the same or different to the name of the map, but do make sure it is prefixed with your mod ID to be unique
-					"DisplayName": "{{i18n: location.CliveJillTorgalHouseInterior.name}}", // DisplayName is rarely seen but because it can be seen by players sometimes I recommend adding it via i18n so it can be easily translated
+				"{{ModID}}_CliveJillTorgalHouseInterior": { 
+					"DisplayName": "{{i18n: location.CliveJillTorgalHouseInterior.name}}", 
 					"DefaultArrivalTile": { // Make this the tile that you want the farmer to arrive on when using the door so when anyone warps in from a different action (like using debug warp) they will still arrive at the door instead of in the void
 						"X": 8,
 						"Y": 21
 					},
 					"CreateOnLoad": {
-						"MapPath": "maps/clive/{{ModID}}_CliveJillTorgalHouseInterior" // Notice that this is the Target from the map Load patch we wrote in the section before this one. This field tells the game which map to use for this location.
+						"MapPath": "maps/{{ModID}}_CliveJillTorgalHouseInterior" // This field tells the game which map to use for this location.
 					}
 				}
 			}

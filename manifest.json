@@ -5,10 +5,13 @@
   "Description": "Adds custom NPCs Clive, Jill, and Torgal from FF16.",
   "UniqueID": "proximity.clivejilltorgal",
   "UpdateKeys": ["35478"],
-  "ContentPackFor": {
+  "ContentPackFor": 
+  {
     "UniqueID": "Pathoschild.ContentPatcher"
   },
-   "Dependencies": [
+   
+   "Dependencies": 
+   [
     
    ],
   

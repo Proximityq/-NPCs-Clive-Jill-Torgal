@@ -1,115 +1,117 @@
 {
-"Changes": 
-    [
+	"Changes": 
+		[
  
-		{
-            "LogName": "Jill Dialogue",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/~NPCNAME~",
-			"Entries": {
+			{
+				"LogName": "Jill Dialogue",
+				"Action": "EditData",
+				"Target": "Characters/Dialogue/~NPCNAME~",
+				"Entries": 
+			
+							{
 
-//CONVERSATION TOPICS (CTs) - CTs are not required but they are a great way to add more life to your NPC's dialogue. See the Conversation Topics page for an explanation if you are unfamiliar with them (https://stardewmodding.wiki.gg/wiki/Conversation_Topics)
-	//Vanilla - this is just a small selection, see the list of vanilla CTs for more (https://stardewvalleywiki.com/Modding:Dialogue#Conversation_topics)
-    "Introduction": "",
-	"cc_Begin": "",
-	"cc_Boulder": "",
-	"cc_Bridge": "",
-	"cc_Bus": "",
-	"cc_Greenhouse": "",
-	"cc_Minecart": "",
-	"cc_Complete": "",
-	"movieTheater": "",
-	"willyCrabs": "",
-	"pamHouseUpgrade": "",
-	"pamHouseUpgradeAnonymous": "",
+								//CONVERSATION TOPICS (CTs) - CTs are not required but they are a great way to add more life to your NPC's dialogue. See the Conversation Topics page for an explanation if you are unfamiliar with them (https://stardewmodding.wiki.gg/wiki/Conversation_Topics)
+								//Vanilla - this is just a small selection, see the list of vanilla CTs for more (https://stardewvalleywiki.com/Modding:Dialogue#Conversation_topics)
+								"Introduction": "",
+								"cc_Begin": "",
+								"cc_Boulder": "",
+								"cc_Bridge": "",
+								"cc_Bus": "",
+								"cc_Greenhouse": "",
+								"cc_Minecart": "",
+								"cc_Complete": "",
+								"movieTheater": "",
+								"willyCrabs": "",
+								"pamHouseUpgrade": "",
+								"pamHouseUpgradeAnonymous": "",
 
-	//CTs from other mods - this is a great way to add interactivity between your NPC and other mods! See the mod-added CTs page for a list of many (but not all) other mods' CTs (https://stardewmodding.wiki.gg/wiki/Conversation_Topics:_List_of_CTs)
-	//Deleted because too much work.
+								// SPECIFIC DIALOGUE
+								"MovieInvite_Invited": "",
+								"DumpsterDiveComment": "",
+								"SpouseStardrop": "",
+								"FlowerDance_Accept_Spouse": "",
+								"FlowerDance_Accept": "",
+								"FlowerDance_Decline": "",
+								"GreenRain": "",
+								"GreenRain_2": "", 
+								"GreenRainFinished": "", 
+								"AcceptGift_(O)StardropTea": "", 
+								
+								"AcceptGift_(O)595": "",
+								"AcceptGift_(O)613": "",
+								"AcceptGift_(O)863": "",
+								"AcceptGift_(O)211": "",
+								"AcceptGift_(O)220": "",
+								"AcceptGift_(O)221": "",
+								"AcceptGift_(O)732": "",
+								"AcceptGift_(O)313": "",
+								"AcceptGift_category_minerals": "",
+								"AcceptGift_category_gem": "",
 
-// SPECIFIC DIALOGUE
-	"MovieInvite_Invited": "",
-	"DumpsterDiveComment": "",
-	"SpouseStardrop": "",
-	"FlowerDance_Accept_Spouse": "",
-    "FlowerDance_Accept": "",
-	"FlowerDance_Decline": "",
-	"GreenRain": "",
-	"GreenRain_2": "", 
-	"GreenRainFinished": "",  
+								// GENERIC DIALOGUE (Numbers indicate heart level)
+								"Mon": "Test", 
+								"Tue": "Test",
+								"Wed": "Test",
+								"Thu": "Test",
+								"Fri": "Test",
+								"Sat": "Test",
+								"Sun": "Test",
 
-// GENERIC DIALOGUE (Numbers indicate heart level)
-    "Mon": "", 
-    "Tue": "",
-    "Wed": "",
-    "Thu": "",
-    "Fri": "",
-    "Sat": "",
-    "Sun": "",
-    "Mon2": "", 
-    "Tue2": "",
-    "Wed2": "",
-    "Thu2": "",
-    "Fri2": "",
-    "Sat2": "",
-    "Sun2": "",
+								"Mon2": "", 
+								"Tue2": "",
+								"Wed2": "",
+								"Thu2": "",
+								"Fri2": "",
+								"Sat2": "",
+								"Sun2": "",
 
-    "Mon4": "", 
-    "Tue4": "",
-    "Wed4": "",
-    "Thu4": "",
-    "Fri4": "",
-    "Sat4": "",
-    "Sun4": "",
+								"Mon4": "", 
+								"Tue4": "",
+								"Wed4": "",
+								"Thu4": "",
+								"Fri4": "",
+								"Sat4": "",
+								"Sun4": "",
 
-    "Mon6": "",
-    "Tue6": "",
-    "Wed6": "",
-    "Thu6": "",
-    "Fri6": "",
-    "Sat6": "",
-    "Sun6": "",
+								"Mon6": "",
+								"Tue6": "",
+								"Wed6": "",
+								"Thu6": "",
+								"Fri6": "",
+								"Sat6": "",
+								"Sun6": "",
 
-    "Mon8": "",
-    "Tue8": "",
-    "Wed8": "",
-    "Thu8": "",
-    "Fri8": "",
-    "Sat8": "",
-    "Sun8": "",
+								"Mon8": "",
+								"Tue8": "",
+								"Wed8": "",
+								"Thu8": "",
+								"Fri8": "",
+								"Sat8": "",
+								"Sun8": "",
 
-    "Mon10": "",
-    "Tue10": "",
-    "Wed10": "",
-    "Thu10": "",
-    "Fri10": "",
-    "Sat10": "",
-    "Sun10": "",   
-   
+								"Mon10": "",
+								"Tue10": "",
+								"Wed10": "",
+								"Thu10": "",
+								"Fri10": "",
+								"Sat10": "",
+								"Sun10": "",   
+							   
 
-	// SPECIFIC DAY DIALOGUE
-	"spring_1": "",
-	"summer_1": "",
-	"fall_1": "",
-	"winter_1": "",
-	"spring_12": "", // Day before the Egg Festival
-	"spring_23": "", // Day before the Flower Dance
-	"summer_10": "", // Day before the Luau
-	"summer_27": "", // Day before the Midnight Jellies
-	"fall_15": "", // Day before the Stardew Fair
-	"fall_26": "", // Day before Spirit's Eve
-	"winter_7": "", // Day before the Ice Festival
-	"winter_24": "", // Day before Winter Star
+								// SPECIFIC DAY DIALOGUE
+								"spring_1": "",
+								"summer_1": "",
+								"fall_1": "",
+								"winter_1": "",
+								"spring_12": "", // Day before the Egg Festival
+								"spring_23": "", // Day before the Flower Dance
+								"summer_10": "", // Day before the Luau
+								"summer_27": "", // Day before the Midnight Jellies
+								"fall_15": "", // Day before the Stardew Fair
+								"fall_26": "", // Day before Spirit's Eve
+								"winter_7": "", // Day before the Ice Festival
+								"winter_24": "", // Day before Winter Star
+							}		      
 			}
-        }
-
-		//Rainy day dialogue 
-			{	
-		"Action": "EditData",
-		"Target": "Characters/Dialogue/rainy",
-		"Entries": {
-				"~NPCNAME~": "{{Random: Hi, @! Wow, you're wet! && Hiya, @. We're staying inside today. I get bad-scrungy when I'm wet. && I'm protecting Jean today! Scary thunder can't get me!$h && Lots of people get sad when it rains. If you have time, maybe visit some people for us?$h && It's dark right now, but I'm sure there will be more sunbeams.$h |inputSeparator=&&}}", //Example of randomized dialogue
-					}
-	},
-
-    ]
+		]
 }

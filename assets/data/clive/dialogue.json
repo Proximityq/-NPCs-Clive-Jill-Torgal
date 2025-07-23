@@ -1,139 +1,132 @@
 {
-"Changes": 
-    [
+	"Changes": 
+		[
  
-		{
-            "LogName": "Clive Dialogue",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/~NPCNAME~",
-			"Entries": {
+			{
+				"LogName": "Clive Dialogue",
+				"Action": "EditData",
+				"Target": "Characters/Dialogue/~NPCNAME~",
+				"Entries": 
+			
+							{
 
-//CONVERSATION TOPICS (CTs) - CTs are not required but they are a great way to add more life to your NPC's dialogue. See the Conversation Topics page for an explanation if you are unfamiliar with them (https://stardewmodding.wiki.gg/wiki/Conversation_Topics)
-	//Vanilla - this is just a small selection, see the list of vanilla CTs for more (https://stardewvalleywiki.com/Modding:Dialogue#Conversation_topics)
-    "Introduction": "…#$b#Did the wizard…?#$e#The name’s Clive. Nice meeting you.",
-	"cc_Begin": "I’ve been seeing more Junimos around lately. This isn’t your doing, is it?",
-	"cc_Boulder": "",
-	"cc_Bridge": "",
-	"cc_Bus": "You’re getting pretty far with the Community Center bundles.#$b#I’ve got some more stuff that might be useful. Here, take them.#$action AddItem (O)259#$action AddItem (O)428#$action AddItem (O)276 5 2#$e#I’ve been doing pretty well, you see.",
-	"cc_Greenhouse": "",
-	"cc_Minecart": "I see you’re helping with the Community Center too.#$e#Truth is, the Junimos also asked us for some help. I helped collect some monster parts, but it seems they won’t be needing it anymore.#$e#Don’t look sorry, that’s just how it is sometimes.#$b#Why don’t you take this? Give it to the Junimos for me.[(O)613]",
-	"cc_Complete": "The town seems pretty happy now that you’ve fixed up their Community Center.#$b#You should be proud, you deserve it.",
-	"movieTheater": "",
-	"willyCrabs": "",
-	"pamHouseUpgrade": "",
-	"pamHouseUpgradeAnonymous": "",
+								//CONVERSATION TOPICS (CTs) - CTs are not required but they are a great way to add more life to your NPC's dialogue. See the Conversation Topics page for an explanation if you are unfamiliar with them (https://stardewmodding.wiki.gg/wiki/Conversation_Topics)
+								//Vanilla - this is just a small selection, see the list of vanilla CTs for more (https://stardewvalleywiki.com/Modding:Dialogue#Conversation_topics)
+								"Introduction": "…#$b#Did the wizard…?#$e#The name’s Clive. Nice meeting you.",
+								"cc_Begin": "I’ve been seeing more Junimos around lately. This isn’t your doing, is it?",
+								"cc_Boulder": "",
+								"cc_Bridge": "",
+								"cc_Bus": "You’re getting pretty far with the Community Center bundles.#$b#I’ve got some more stuff that might be useful. Here, take them.#$action AddItem (O)259#$action AddItem (O)428#$action AddItem (O)276 5 2#$e#I’ve been doing pretty well, you see.",
+								"cc_Greenhouse": "",
+								"cc_Minecart": "I see you’re helping with the Community Center too.#$e#Truth is, the Junimos also asked us for some help. I helped collect some monster parts, but it seems they won’t be needing it anymore.#$e#Don’t look sorry, that’s just how it is sometimes.#$b#Why don’t you take this? Give it to the Junimos for me.[(O)613]",
+								"cc_Complete": "The town seems pretty happy now that you’ve fixed up their Community Center.#$b#You should be proud, you deserve it.",
+								"movieTheater": "",
+								"willyCrabs": "",
+								"pamHouseUpgrade": "",
+								"pamHouseUpgradeAnonymous": "",
 
-	//CTs from other mods - this is a great way to add interactivity between your NPC and other mods! See the mod-added CTs page for a list of many (but not all) other mods' CTs (https://stardewmodding.wiki.gg/wiki/Conversation_Topics:_List_of_CTs)
-	//Deleted because too much work.
+								//CTs from other mods - this is a great way to add interactivity between your NPC and other mods! See the mod-added CTs page for a list of many (but not all) other mods' CTs (https://stardewmodding.wiki.gg/wiki/Conversation_Topics:_List_of_CTs)
+								//Deleted because too much work.
 
-// SPECIFIC DIALOGUE
-	"MovieInvite_Invited": "",
-	"DumpsterDiveComment": "",
-	"SpouseStardrop": "",
-	"FlowerDance_Accept_Spouse": "",
-    "FlowerDance_Accept": "",
-	"FlowerDance_Decline": "",
-	"GreenRain": "The mist looks like an aetherflood, but I don’t feel any magic here. Is there an Eikon of Nature in this world?",
-	"GreenRain_2": "Jill and I arrived at the valley while it was raining like this.#$b#It seems like the wizard can open more portals during the green rain.", 
-	"GreenRainFinished": "Torgal seems to like the grass that grows from the rain.#$b#Last night he came home covered in moss.$h", 
-	"AcceptGift_(O)StardropTea": "This aroma… Joshua—#$b#%Clive’s eyes starts to water.#$b#Thank you. For this.#$e#I need a bit of time to myself right now.", 
-	
-	"AcceptGift_(O)595": "Jill and I came from the Duchy of Rosaria. Not much of it remains now, but this flower still gives us hope.$h",
-	"AcceptGift_(O)613": "The hideaway grows the best apples, everyone loves them. This one’s pretty good too, not as sweet though.$h",
-	"AcceptGift_(O)863": "%A sad look glazes over his eyes. He gives you a nod of thanks however.",
-	"AcceptGift_(O)211": "I’ve never really been one for cakes and ale.$s",
-	"AcceptGift_(O)220": "I’ve never really been one for cakes and ale.$s",
-	"AcceptGift_(O)221": "I’ve never really been one for cakes and ale.$s",
-	"AcceptGift_(O)732": "I’ve never really been one for cakes and ale.$s",
-	"AcceptGift_(O)313": "I’ve never really been one for cakes and ale.$s",
-	"AcceptGift_category_minerals": "Sorry, I just can’t shake off this bad feeling when I see this.$s",
-	"AcceptGift_category_gem": "Sorry, I just can’t shake off this bad feeling when I see this.$s",
+								// SPECIFIC DIALOGUE
+								"MovieInvite_Invited": "",
+								"DumpsterDiveComment": "",
+								"SpouseStardrop": "",
+								"FlowerDance_Accept_Spouse": "",
+								"FlowerDance_Accept": "",
+								"FlowerDance_Decline": "",
+								"GreenRain": "The mist looks like an aetherflood, but I don’t feel any magic here. Is there an Eikon of Nature in this world?",
+								"GreenRain_2": "Jill and I arrived at the valley while it was raining like this.#$b#It seems like the wizard can open more portals during the green rain.", 
+								"GreenRainFinished": "Torgal seems to like the grass that grows from the rain.#$b#Last night he came home covered in moss.$h", 
+								"AcceptGift_(O)StardropTea": "This aroma… Joshua—#$b#%Clive’s eyes starts to water.#$b#Thank you. For this.#$e#I need a bit of time to myself right now.", 
+								
+								"AcceptGift_(O)595": "Jill and I came from the Duchy of Rosaria. Not much of it remains now, but this flower still gives us hope.$h",
+								"AcceptGift_(O)613": "The hideaway grows the best apples, everyone loves them. This one’s pretty good too, not as sweet though.$h",
+								"AcceptGift_(O)863": "%A sad look glazes over his eyes. He gives you a nod of thanks however.",
+								"AcceptGift_(O)211": "I’ve never really been one for cakes and ale.$s",
+								"AcceptGift_(O)220": "I’ve never really been one for cakes and ale.$s",
+								"AcceptGift_(O)221": "I’ve never really been one for cakes and ale.$s",
+								"AcceptGift_(O)732": "I’ve never really been one for cakes and ale.$s",
+								"AcceptGift_(O)313": "I’ve never really been one for cakes and ale.$s",
+								"AcceptGift_category_minerals": "Sorry, I just can’t shake off this bad feeling when I see this.$s",
+								"AcceptGift_category_gem": "Sorry, I just can’t shake off this bad feeling when I see this.$s",
 
-// GENERIC DIALOGUE (Numbers indicate heart level)
-    "Mon": "Take care in the forest. There aren’t many monsters, but sometimes a couple show up on our walks with Torgal.", 
-    "Tue": "The people here have technology almost like magic. It gives a lot of hope that our people back home can also thrive in a world without magic.#$b#Maybe I should bring something back for Mid…#$e#$%Clive seems lost in thought.",
-    "Wed": "Today is my turn to pick up the groceries, but I don’t really know what to get…#$b#Perhaps I should ask Torgal?",
-    "Thu": "I never got to try the Fried Mortress of Skyworm that Molly made.#$b#What was it again? Wyvern liver and drakesmint? I don’t think we can find that here.",
-    "Fri": "",
-    "Sat": "",
-    "Sun": "Sometimes I can’t help but feel like an outsider here.
-		#$q {{ModId}}_outsiderquestion_yes/{{ModId}}_outsiderquestion_no {{ModId}}_outsiderquestion_followup#What about you?
-			#$r {{ModId}}_outsiderquestion_yes 100 outsiderquestion_yes#Sometimes I feel like an outsider too.
-			#$r {{ModId}}_outsiderquestion_yes 250 outsiderquestion_both friend_{{ModId}}_Jill_250#I think we’re both finding our places in the village.
-			#$r {{ModId}}_outsiderquestion_no -20 outsiderquestion_no#I think I belong here.
-		",
-			"outsiderquestion_yes": "I’m glad I’m not the only one.#$b#See you later, @.$h",
-			"outsiderquestion_both": "That’s right, we’re all finding our place here.$h#$b#I’m sure you belong here, @.$0",
-			"outsiderquestion_no": "Is that so? I’m happy for you.", 
-			"outsiderquestion_followup": "$p {{ModId}}_outsiderquestion_yes#But I’m sure we’ll fit in soon enough.$h|But you’re fitting into the village quite nicely, aren’t you?",
+								// GENERIC DIALOGUE (Numbers indicate heart level)
+								"Mon": "Take care in the forest. There aren’t many monsters, but sometimes a couple show up on our walks with Torgal.", 
+								"Tue": "The people here have technology almost like magic. It gives a lot of hope that our people back home can also thrive in a world without magic.#$b#Maybe I should bring something back for Mid…#$e#$%Clive seems lost in thought.",
+								"Wed": "Today is my turn to pick up the groceries, but I don’t really know what to get…#$b#Perhaps I should ask Torgal?",
+								"Thu": "I never got to try the Fried Mortress of Skyworm that Molly made.#$b#What was it again? Wyvern liver and drakesmint? I don’t think we can find that here.",
+								"Fri": "",
+								"Sat": "",
+								"Sun": "Sometimes I can’t help but feel like an outsider here.
+										#$q {{ModId}}_outsiderquestion_yes/{{ModId}}_outsiderquestion_no {{ModId}}_outsiderquestion_followup#What about you?
+										#$r {{ModId}}_outsiderquestion_yes 100 outsiderquestion_yes#Sometimes I feel like an outsider too.
+										#$r {{ModId}}_outsiderquestion_yes 250 outsiderquestion_both friend_{{ModId}}_Jill_250#I think we’re both finding our places in the village.
+										#$r {{ModId}}_outsiderquestion_no -20 outsiderquestion_no#I think I belong here.
+										",
+										
+										"outsiderquestion_yes": "I’m glad I’m not the only one.#$b#See you later, @.$h",
+										"outsiderquestion_both": "That’s right, we’re all finding our place here.$h#$b#I’m sure you belong here, @.$0",
+										"outsiderquestion_no": "Is that so? I’m happy for you.", 
+										"outsiderquestion_followup": "$p {{ModId}}_outsiderquestion_yes#But I’m sure we’ll fit in soon enough.$h|But you’re fitting into the village quite nicely, aren’t you?",
 
-    "Mon2": "", 
-    "Tue2": "",
-    "Wed2": "",
-    "Thu2": "",
-    "Fri2": "",
-    "Sat2": "",
-    "Sun2": "",
+								"Mon2": "", 
+								"Tue2": "",
+								"Wed2": "",
+								"Thu2": "",
+								"Fri2": "",
+								"Sat2": "",
+								"Sun2": "",
 
-    "Mon4": "@, nice seeing you. Come to pet Torgal again?", 
-    "Tue4": "",
-    "Wed4": "Hey @. What do you think I should make for Jill tonight?#$e#What do I like? Hmm…#$b#Maybe a Baked Fish or something?$h",
-    "Thu4": "Have you heard of foie gras? I think it’s close enough to wyvern liver.#$e#If you have any ducks for sale, we’ll be happy to take one.#$b#Or an egg, I’m sure we can make do with an egg.",
-    "Fri4": "",
-    "Sat4": "",
-    "Sun4": "Where should we go…
-		#$p {{ModId}}_outsiderquestion_no#Oh, @, good to see you.|Oh, @, good to see you! What is it that Robin says…#$b#You're a regular member of the community now, don't you think?$h#$b#Heheh.
-		",
+								"Mon4": "@, nice seeing you. Come to pet Torgal again?", 
+								"Tue4": "",
+								"Wed4": "Hey @. What do you think I should make for Jill tonight?#$e#What do I like? Hmm…#$b#Maybe a Baked Fish or something?$h",
+								"Thu4": "Have you heard of foie gras? I think it’s close enough to wyvern liver.#$e#If you have any ducks for sale, we’ll be happy to take one.#$b#Or an egg, I’m sure we can make do with an egg.",
+								"Fri4": "",
+								"Sat4": "",
+								"Sun4": "Where should we go…
+									#$p {{ModId}}_outsiderquestion_no#Oh, @, good to see you.|Oh, @, good to see you! What is it that Robin says…#$b#You're a regular member of the community now, don't you think?$h#$b#Heheh.
+									",
 
-    "Mon6": "",
-    "Tue6": "",
-    "Wed6": "",
-    "Thu6": "",
-    "Fri6": "",
-    "Sat6": "",
-    "Sun6": "",
+								"Mon6": "",
+								"Tue6": "",
+								"Wed6": "",
+								"Thu6": "",
+								"Fri6": "",
+								"Sat6": "",
+								"Sun6": "",
 
-    "Mon8": "",
-    "Tue8": "",
-    "Wed8": "",
-    "Thu8": "",
-    "Fri8": "",
-    "Sat8": "",
-    "Sun8": "",
+								"Mon8": "",
+								"Tue8": "",
+								"Wed8": "",
+								"Thu8": "",
+								"Fri8": "",
+								"Sat8": "",
+								"Sun8": "",
 
-    "Mon10": "",
-    "Tue10": "",
-    "Wed10": "",
-    "Thu10": "",
-    "Fri10": "",
-    "Sat10": "",
-    "Sun10": "",   
-   
+								"Mon10": "",
+								"Tue10": "",
+								"Wed10": "",
+								"Thu10": "",
+								"Fri10": "",
+								"Sat10": "",
+								"Sun10": "",   
+							   
 
-	// SPECIFIC DAY DIALOGUE
-	"spring_1": "",
-	"summer_1": "",
-	"fall_1": "",
-	"winter_1": "",
-	"spring_12": "", // Day before the Egg Festival
-	"spring_23": "", // Day before the Flower Dance
-	"summer_10": "", // Day before the Luau
-	"summer_27": "", // Day before the Midnight Jellies
-	"fall_15": "", // Day before the Stardew Fair
-	"fall_26": "", // Day before Spirit's Eve
-	"winter_7": "", // Day before the Ice Festival
-	"winter_24": "", // Day before Winter Star
+								// SPECIFIC DAY DIALOGUE
+								"spring_1": "",
+								"summer_1": "",
+								"fall_1": "",
+								"winter_1": "",
+								"spring_12": "", // Day before the Egg Festival
+								"spring_23": "", // Day before the Flower Dance
+								"summer_10": "", // Day before the Luau
+								"summer_27": "", // Day before the Midnight Jellies
+								"fall_15": "", // Day before the Stardew Fair
+								"fall_26": "", // Day before Spirit's Eve
+								"winter_7": "", // Day before the Ice Festival
+								"winter_24": "", // Day before Winter Star
+							}		      
 			}
-        }
-
-		//Rainy day dialogue 
-			{	
-		"Action": "EditData",
-		"Target": "Characters/Dialogue/rainy",
-		"Entries": {
-				"~NPCNAME~": "{{Random: Hi, @! Wow, you're wet! && Hiya, @. We're staying inside today. I get bad-scrungy when I'm wet. && I'm protecting Jean today! Scary thunder can't get me!$h && Lots of people get sad when it rains. If you have time, maybe visit some people for us?$h && It's dark right now, but I'm sure there will be more sunbeams.$h |inputSeparator=&&}}", //Example of randomized dialogue
-					}
-	},
-
-    ]
+		]
 }
