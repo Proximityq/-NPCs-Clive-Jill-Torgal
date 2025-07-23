@@ -154,14 +154,14 @@
 			"FromArea": { // The X and Y of the FromArea will remain 0,0. Open up your map patch and check the width and height of the map.
 				"X": 0,
 				"Y": 0,
-				"Width": 12,
-				"Height": 12
+				"Width": 7,
+				"Height": 9
 			},
 			"ToArea": { // The X and Y of the ToArea(the ones on the target map). This is where your patch 'starts' on the target map.
-				"X": 7,
+				"X": 9,
 				"Y": 61,
-				"Width": 12,
-				"Height": 12
+				"Width": 7,
+				"Height": 9
 			}
 		},
 		{// Adds the LockedDoorWarp. This tile is locked behind a specific time in-game + the player clicking on said tile. It can also be locked behind heart level with an NPC.
@@ -170,7 +170,7 @@
 			"Target": "Maps/Forest", // Target the map you're adding your house to.
 			"MapTiles": [
 				{
-					"Position": { "X": 10, "Y": 69 }, // The coordinate of the bottom tile of the door.
+					"Position": { "X": 11, "Y": 69 }, // The coordinate of the bottom tile of the door.
 					"Layer": "Buildings", // The tile the player is clicking is on the buildings layer.
 					"SetProperties": {
 						"Action": "LockedDoorWarp 8 21 {{ModID}}_CliveJillTorgalHouseInterior 0900 2200" // LockedDoorWarp that takes you to these coordinates INSIDE the house, then the name of the house, and then the opening and closing time. If you also want the player to be locked out until they reach a certain heart level with an NPC you can add their internal name and the number of friendship points needed to use the warp (in this case AirynDao 1000).
@@ -183,7 +183,7 @@
 			"Action": "EditMap",
 			"Target": "Maps/{{ModID}}_CliveJillTorgalHouseExterior", // Target the interior house map this time
 			"AddWarps": [
-				"8 23 Forest 9 71", // The first set of coordinates is where you want the player to step to LEAVE the house, the second set is where they will show up OUTSIDE the house, in the village.
+				"8 23 Forest 11 70", // The first set of coordinates is where you want the player to step to LEAVE the house, the second set is where they will show up OUTSIDE the house, in the village.
 			]
 		},
       ]

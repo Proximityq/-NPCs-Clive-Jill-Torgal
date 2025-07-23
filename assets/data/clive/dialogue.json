@@ -25,9 +25,6 @@
 								"pamHouseUpgrade": "",
 								"pamHouseUpgradeAnonymous": "",
 
-								//CTs from other mods - this is a great way to add interactivity between your NPC and other mods! See the mod-added CTs page for a list of many (but not all) other mods' CTs (https://stardewmodding.wiki.gg/wiki/Conversation_Topics:_List_of_CTs)
-								//Deleted because too much work.
-
 								// SPECIFIC DIALOGUE
 								"MovieInvite_Invited": "",
 								"DumpsterDiveComment": "",

@@ -27,10 +27,10 @@
    						 "Id": "Default",
    						 "Location": "{{ModID}}_CliveJillTorgalHouseInterior",
    						 "Tile": {
-   							 "X": 13,
-   							 "Y": 21
+   							 "X": 22,
+   							 "Y": 20
    						 },
-   						 "Direction": "right"
+   						 "Direction": "left"
    					 }
    				 ],
    			 },    
